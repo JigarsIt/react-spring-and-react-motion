@@ -1,0 +1,12 @@
+.commonStyles {
+    margin-bottom: 50px;
+}
+.commonStyles a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.mobileCommonStyle a {
+    text-decoration: none;
+    color: blue;
+}
