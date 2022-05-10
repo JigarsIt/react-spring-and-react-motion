@@ -8,7 +8,7 @@ const ToggleFadeText = ({ isToggle }) => {
     config: { duration: 1500 },
   });
 
-  return <animated.h1 style={fade}>Hello, IPS Team</animated.h1>;
+  return <animated.h1 style={fade}>Hello, IPS</animated.h1>;
 };
 
 export default HocToggle(ToggleFadeText);
