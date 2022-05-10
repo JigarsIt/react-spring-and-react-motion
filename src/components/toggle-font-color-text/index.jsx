@@ -6,9 +6,9 @@ const ToggleFontColorText = ({ isToggle }) => {
     const fade = useSpring({
         fontSize: isToggle ? "4rem":"1.5rem",
         color: isToggle ? "tomato":"green",
-        config: { duration: 3000 },
+        config: { duration: 1500 },
     });
-  return <animated.h1 style={fade}>Hello</animated.h1>;
+  return <animated.h1 style={fade}>Hello, IPS</animated.h1>;
 };
 
 export default HocToggle(ToggleFontColorText);

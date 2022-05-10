@@ -5,10 +5,10 @@ import HocToggle from "../hoc-toggle";
 const ToggleFadeText = ({ isToggle }) => {
   const fade = useSpring({
     opacity: isToggle ? 1 : 0,
-    config: { duration: 3000 },
+    config: { duration: 1500 },
   });
 
-  return <animated.h1 style={fade}>Hello</animated.h1>;
+  return <animated.h1 style={fade}>Hello, IPS</animated.h1>;
 };
 
 export default HocToggle(ToggleFadeText);

@@ -12,7 +12,7 @@ import MenuItem from "@mui/material/MenuItem";
 import { NavLink } from "react-router-dom";
 import styles from "./styles.module.css";
 
-const pages = { "Example 1": "/", "Example 2": "/ex2", "Example 3": "/ex3" };
+const pages = { "Example 1": "/", "Example 2": "/ex2", "Example 3": "/ex3"};
 // const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const HeaderNavbar = () => {

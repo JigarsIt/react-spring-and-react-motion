@@ -1,28 +1,12 @@
-import React, { useState } from "react";
-import useMeasure from "react-use-measure";
-import { useSpring, animated } from "@react-spring/web";
-
+import React from "react";
+import CircleProgressBar from "../circle-progress-bar";
+import HorizontalProgressBar from "../horizontal-progress-bar";
 import styles from "./styles.module.css";
-
 const ProgressBar = () => {
-  const [open, toggle] = useState(false);
-  const [ref, { width }] = useMeasure();
-  const props = useSpring({ width: open ? width : 0, config: {duration: 3000} });
-
-  const calculatePercentage = (x) => {
-    return ((x*100)/width).toFixed(0);
-  }
-
   return (
     <div className={styles.container}>
-      <div
-        ref={ref}
-        className={styles.main}
-        onClick={() => toggle(!open)}
-      >
-        <animated.div className={styles.fill} style={props}></animated.div>
-        <animated.div className={styles.content}>{props.width.to(x=> calculatePercentage(x))}</animated.div>
-      </div>
+      <HorizontalProgressBar />
+      <CircleProgressBar />
     </div>
   );
 };
