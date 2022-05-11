@@ -36,7 +36,7 @@ const CircleProgressBar = () => {
   return (
     <div className={styles.container} onClick={() => set(!active)}>
       <Wheel
-        stroke={props3.stroke.interpolate((x) => Math.round(x))}
+        stroke={props3.stroke.to((x) => Math.round(x))}
         otherStroke={props3.otherStroke}
       />
     </div>
